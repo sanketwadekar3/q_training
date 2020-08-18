@@ -13,10 +13,5 @@ pipeline {
                 sh 'python3 -m unittest test_cal.py'
             }
         }
-        stage('Deploy') {
-            steps {
-                
-            }
-        }
     }
 }
