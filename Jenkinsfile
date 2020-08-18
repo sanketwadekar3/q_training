@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sudo ssh -tt -i "sanket.pem" -o StrictHostKeyChecking=no ec2-user@ec2-54-144-36-26.compute-1.amazonaws.com'
+                sh 'sudo ssh -i "sanket.pem" -o StrictHostKeyChecking=no ec2-user@ec2-54-144-36-26.compute-1.amazonaws.com'
             }
         }
     }
